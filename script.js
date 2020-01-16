@@ -12,7 +12,7 @@ var now = moment().format('M/D/YYYY');
 function citySearch(city){
 
     $("#amsterdam").empty();
-    var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appid}`
+    var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appid}`
 
     $.ajax({
         url: queryURL,
